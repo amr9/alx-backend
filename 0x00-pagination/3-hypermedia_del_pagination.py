@@ -40,7 +40,7 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-        """"""
+        """comments"""
         assert type(index) is int and type(page_size) is int
         assert 0 <= index < len(self.dataset())
         dataset = self.indexed_dataset()
